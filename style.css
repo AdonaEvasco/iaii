@@ -1,0 +1,47 @@
+/* Custom Styles for WAIZ */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, #10b981 0%, #065f46 100%);
+}
+
+.junkshop-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.junkshop-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.verified-badge {
+    background: #10b981;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.rating-stars {
+    color: #f59e0b;
+}
+
+.chat-button {
+    background: #10b981;
+    transition: background 0.3s ease;
+}
+
+.chat-button:hover {
+    background: #065f46;
+}
+
+.nav-link {
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #10b981;
+}
