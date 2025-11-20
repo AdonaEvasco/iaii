@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages - WAIZ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <i class="fas fa-recycle text-green-600 text-2xl mr-3"></i>
+                    <span class="font-bold text-xl text-green-800">WAIZ</span>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <a href="index.html" class="text-gray-700 hover:text-green-600">Home</a>
+                    <a href="junkshops.html" class="text-gray-700 hover:text-green-600">Junkshops</a>
+                    <a href="messages.html" class="text-green-600 font-semibold">Messages</a>
+                    <a href="settings.html" class="text-gray-700 hover:text-green-600">Settings</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Messages Layout -->
+    <div class="max-w-6xl mx-auto px-4 py-6">
+        <div class="bg-white rounded-lg shadow-md flex h-[600px]">
+            <!-- Conversations List -->
+            <div class="w-1/3 border-r border-gray-200">
+                <div class="p-4 border-b border-gray-200">
+                    <h2 class="text-xl font-semibold">Messages</h2>
+                </div>
+                <div class="overflow-y-auto h-full">
+                    <!-- Conversation 1 -->
+                    <div class="p-4 border-b border-gray-100 hover:bg-green-50 cursor-pointer">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center text-white font-semibold">
+                                CJ
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex justify-between items-center">
+                                    <h3 class="font-semibold">Carlisco Junkshop</h3>
+                                    <span class="text-xs text-gray-500">10:30 AM</span>
+                                </div>
+                                <p class="text-sm text-gray-600 truncate">Yes, we accept plastic bottles at ₱5 per kg</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Conversation 2 -->
+                    <div class="p-4 border-b border-gray-100 hover:bg-green-50 cursor-pointer">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-semibold">
+                                BR
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex justify-between items-center">
+                                    <h3 class="font-semibold">Baguio Recycling</h3>
+                                    <span class="text-xs text-gray-500">Yesterday</span>
+                                </div>
+                                <p class="text-sm text-gray-600 truncate">We can pick up the materials tomorrow</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Conversation 3 -->
+                    <div class="p-4 border-b border-gray-100 hover:bg-green-50 cursor-pointer">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-semibold">
+                                EW
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex justify-between items-center">
+                                    <h3 class="font-semibold">Eco Warriors</h3>
+                                    <span class="text-xs text-gray-500">2 days ago</span>
+                                </div>
+                                <p class="text-sm text-gray-600 truncate">Thank you for your business!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chat Area -->
+            <div class="w-2/3 flex flex-col">
+                <!-- Chat Header -->
+                <div class="p-4 border-b border-gray-200">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center text-white font-semibold">
+                            CJ
+                        </div>
+                        <div>
+                            <h3 class="font-semibold">Carlisco Junkshop</h3>
+                            <p class="text-sm text-green-600">Online</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Messages -->
+                <div class="flex-1 p-4 overflow-y-auto bg-gray-50">
+                    <!-- Received Message -->
+                    <div class="flex mb-4">
+                        <div class="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center text-white text-xs mr-3">
+                            CJ
+                        </div>
+                        <div class="bg-white rounded-lg p-3 max-w-xs">
+                            <p>Hello! What materials do you want to sell today?</p>
+                            <span class="text-xs text-gray-500 mt-1">10:15 AM</span>
+                        </div>
+                    </div>
+
+                    <!-- Sent Message -->
+                    <div class="flex mb-4 justify-end">
+                        <div class="bg-green-600 text-white rounded-lg p-3 max-w-xs">
+                            <p>I have 5kg of plastic bottles and 3kg of aluminum cans</p>
+                            <span class="text-xs text-green-100 mt-1">10:20 AM</span>
+                        </div>
+                    </div>
+
+                    <!-- Received Message -->
+                    <div class="flex mb-4">
+                        <div class="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center text-white text-xs mr-3">
+                            CJ
+                        </div>
+                        <div class="bg-white rounded-lg p-3 max-w-xs">
+                            <p>Great! We accept both. Plastic bottles at ₱5 per kg and aluminum cans at ₱15 per kg.</p>
+                            <span class="text-xs text-gray-500 mt-1">10:25 AM</span>
+                        </div>
+                    </div>
+
+                    <!-- Sent Message -->
+                    <div class="flex mb-4 justify-end">
+                        <div class="bg-green-600 text-white rounded-lg p-3 max-w-xs">
+                            <p>Perfect! When can I bring them?</p>
+                            <span class="text-xs text-green-100 mt-1">10:28 AM</span>
+                        </div>
+                    </div>
+
+                    <!-- Received Message -->
+                    <div class="flex mb-4">
+                        <div class="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center text-white text-xs mr-3">
+                            CJ
+                        </div>
+                        <div class="bg-white rounded-lg p-3 max-w-xs">
+                            <p>We're open until 7PM today. See you soon!</p>
+                            <span class="text-xs text-gray-500 mt-1">10:30 AM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Message Input -->
+                <div class="p-4 border-t border-gray-200">
+                    <div class="flex space-x-3">
+                        <input type="text" placeholder="Type your message..." 
+                               class="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                        <button class="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
