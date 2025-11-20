@@ -3,56 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WAIZ - Eco Marketplace for Recycling</title>
+    <title>WAIZ - Eco Marketplace</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'eco-green': '#10b981',
-                        'eco-dark': '#065f46',
-                        'eco-light': '#d1fae5',
-                    }
-                }
-            }
-        }
-    </script>
 </head>
 <body class="bg-gray-50">
     <!-- Navigation -->
-    <nav class="bg-white shadow-lg sticky top-0 z-50">
+    <nav class="bg-white shadow-lg">
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex justify-between items-center h-16">
-                <!-- Logo -->
                 <div class="flex items-center">
-                    <i class="fas fa-recycle text-eco-green text-2xl mr-3"></i>
-                    <span class="font-bold text-xl text-eco-dark">WAIZ</span>
+                    <i class="fas fa-recycle text-green-600 text-2xl mr-3"></i>
+                    <span class="font-bold text-xl text-green-800">WAIZ</span>
                 </div>
-
-                <!-- Search Bar -->
-                <div class="flex-1 max-w-2xl mx-8">
-                    <div class="relative">
-                        <input type="text" placeholder="Search for junkshops or materials..." 
-                               class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-eco-green">
-                        <i class="fas fa-search absolute right-3 top-3 text-gray-400"></i>
-                    </div>
-                </div>
-
-                <!-- Navigation Links -->
                 <div class="flex items-center space-x-6">
-                    <a href="#" class="text-gray-700 hover:text-eco-green transition">
-                        <i class="fas fa-home mr-1"></i> Home
-                    </a>
-                    <a href="#" class="text-gray-700 hover:text-eco-green transition">
-                        <i class="fas fa-store mr-1"></i> Junkshops
-                    </a>
-                    <a href="#" class="text-gray-700 hover:text-eco-green transition">
-                        <i class="fas fa-comments mr-1"></i> Messages
-                    </a>
-                    <button class="bg-eco-green text-white px-4 py-2 rounded-lg hover:bg-eco-dark transition">
-                        <i class="fas fa-user-plus mr-2"></i>Sign Up
+                    <a href="#" class="text-gray-700 hover:text-green-600">Home</a>
+                    <a href="#" class="text-gray-700 hover:text-green-600">Junkshops</a>
+                    <a href="#" class="text-gray-700 hover:text-green-600">Messages</a>
+                    <button class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700">
+                        Sign Up
                     </button>
                 </div>
             </div>
@@ -60,284 +29,51 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="bg-gradient-to-r from-eco-green to-eco-dark text-white py-20">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <h1 class="text-5xl font-bold mb-6">Turn Your Trash into Cash</h1>
-            <p class="text-xl mb-8 max-w-3xl mx-auto">
-                Connect directly with verified junkshops in Baguio City. Sell your recyclables easily, safely, and get the best prices.
-            </p>
-            <div class="flex justify-center space-x-4">
-                <button class="bg-white text-eco-green px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
-                    <i class="fas fa-play-circle mr-2"></i>How It Works
-                </button>
-                <button class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-eco-green transition">
-                    <i class="fas fa-store mr-2"></i>Find Junkshops
-                </button>
-            </div>
-        </div>
+    <section class="bg-green-600 text-white py-20 text-center">
+        <h1 class="text-5xl font-bold mb-6">Turn Your Trash into Cash</h1>
+        <p class="text-xl mb-8">Connect with verified junkshops in Baguio City</p>
+        <button class="bg-white text-green-600 px-8 py-3 rounded-lg font-semibold">
+            Find Junkshops Near You
+        </button>
     </section>
 
-    <!-- How It Works -->
-    <section class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12 text-eco-dark">How WAIZ Works</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="text-center p-6">
-                    <div class="bg-eco-light w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-search text-eco-green text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">1. Find Junkshops</h3>
-                    <p class="text-gray-600">Search for verified junkshops near you with transparent pricing and ratings.</p>
-                </div>
-                <div class="text-center p-6">
-                    <div class="bg-eco-light w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-comments text-eco-green text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">2. Chat & Negotiate</h3>
-                    <p class="text-gray-600">Use our built-in chat to discuss prices, quantities, and pickup arrangements.</p>
-                </div>
-                <div class="text-center p-6">
-                    <div class="bg-eco-light w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-hand-holding-usd text-eco-green text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">3. Get Paid</h3>
-                    <p class="text-gray-600">Complete the transaction and get paid securely through the platform.</p>
+    <!-- Junkshop Cards -->
+    <section class="py-16 max-w-7xl mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-8 text-center">Featured Junkshops</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+            <!-- Card 1 -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-xl font-semibold mb-2">Carlisco Junkshop</h3>
+                <p class="text-gray-600 mb-4">Lower Rock Quarry, Baguio</p>
+                <div class="flex justify-between items-center">
+                    <span class="text-green-600 font-semibold">0.8 km away</span>
+                    <button class="bg-green-600 text-white px-4 py-2 rounded">Chat</button>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Junkshop Directory Preview -->
-    <section class="py-16 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="flex justify-between items-center mb-8">
-                <h2 class="text-3xl font-bold text-eco-dark">Featured Junkshops</h2>
-                <a href="#" class="text-eco-green hover:text-eco-dark font-semibold">
-                    View All <i class="fas fa-arrow-right ml-1"></i>
-                </a>
-            </div>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Junkshop Card 1 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
-                    <div class="h-48 bg-gradient-to-br from-green-400 to-blue-500 relative">
-                        <div class="absolute top-4 right-4 bg-eco-green text-white px-2 py-1 rounded text-sm">
-                            <i class="fas fa-check-circle mr-1"></i>Verified
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-start justify-between mb-3">
-                            <h3 class="text-xl font-semibold">Carlisco Junkshop</h3>
-                            <div class="flex items-center text-yellow-400">
-                                <i class="fas fa-star"></i>
-                                <span class="text-gray-700 ml-1">4.8</span>
-                            </div>
-                        </div>
-                        <p class="text-gray-600 mb-4">
-                            <i class="fas fa-map-marker-alt text-eco-green mr-2"></i>
-                            Lower Rock Quarry, Baguio City
-                        </p>
-                        <div class="flex justify-between items-center mb-4">
-                            <span class="text-sm text-gray-500">
-                                <i class="fas fa-clock mr-1"></i> Open until 7PM
-                            </span>
-                            <span class="text-sm font-semibold text-eco-green">
-                                0.8 km away
-                            </span>
-                        </div>
-                        <button class="w-full bg-eco-green text-white py-2 rounded-lg hover:bg-eco-dark transition">
-                            <i class="fas fa-comment mr-2"></i>Chat Now
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Junkshop Card 2 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
-                    <div class="h-48 bg-gradient-to-br from-yellow-400 to-orange-500 relative">
-                        <div class="absolute top-4 right-4 bg-eco-green text-white px-2 py-1 rounded text-sm">
-                            <i class="fas fa-check-circle mr-1"></i>Verified
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-start justify-between mb-3">
-                            <h3 class="text-xl font-semibold">Baguio Recycling Hub</h3>
-                            <div class="flex items-center text-yellow-400">
-                                <i class="fas fa-star"></i>
-                                <span class="text-gray-700 ml-1">4.6</span>
-                            </div>
-                        </div>
-                        <p class="text-gray-600 mb-4">
-                            <i class="fas fa-map-marker-alt text-eco-green mr-2"></i>
-                            Session Road, Baguio City
-                        </p>
-                        <div class="flex justify-between items-center mb-4">
-                            <span class="text-sm text-gray-500">
-                                <i class="fas fa-clock mr-1"></i> Open until 6PM
-                            </span>
-                            <span class="text-sm font-semibold text-eco-green">
-                                1.2 km away
-                            </span>
-                        </div>
-                        <button class="w-full bg-eco-green text-white py-2 rounded-lg hover:bg-eco-dark transition">
-                            <i class="fas fa-comment mr-2"></i>Chat Now
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Junkshop Card 3 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
-                    <div class="h-48 bg-gradient-to-br from-purple-400 to-pink-500 relative">
-                        <div class="absolute top-4 right-4 bg-gray-500 text-white px-2 py-1 rounded text-sm">
-                            <i class="fas fa-clock mr-1"></i>Pending
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-start justify-between mb-3">
-                            <h3 class="text-xl font-semibold">Eco Warriors</h3>
-                            <div class="flex items-center text-yellow-400">
-                                <i class="fas fa-star"></i>
-                                <span class="text-gray-700 ml-1">4.9</span>
-                            </div>
-                        </div>
-                        <p class="text-gray-600 mb-4">
-                            <i class="fas fa-map-marker-alt text-eco-green mr-2"></i>
-                            Aurora Hill, Baguio City
-                        </p>
-                        <div class="flex justify-between items-center mb-4">
-                            <span class="text-sm text-gray-500">
-                                <i class="fas fa-clock mr-1"></i> Open until 8PM
-                            </span>
-                            <span class="text-sm font-semibold text-eco-green">
-                                2.1 km away
-                            </span>
-                        </div>
-                        <button class="w-full bg-gray-300 text-gray-600 py-2 rounded-lg cursor-not-allowed">
-                            Verification Pending
-                        </button>
-                    </div>
+            <!-- Card 2 -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-xl font-semibold mb-2">Baguio Recycling Hub</h3>
+                <p class="text-gray-600 mb-4">Session Road, Baguio</p>
+                <div class="flex justify-between items-center">
+                    <span class="text-green-600 font-semibold">1.2 km away</span>
+                    <button class="bg-green-600 text-white px-4 py-2 rounded">Chat</button>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- AI Chatbot Section -->
-    <section class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div>
-                    <h2 class="text-3xl font-bold mb-6 text-eco-dark">AI-Powered Assistance</h2>
-                    <p class="text-lg text-gray-600 mb-6">
-                        Our intelligent chatbot helps you find the best junkshops, get price estimates, and answer all your recycling questions instantly.
-                    </p>
-                    <div class="space-y-4">
-                        <div class="flex items-start">
-                            <i class="fas fa-robot text-eco-green text-xl mt-1 mr-4"></i>
-                            <div>
-                                <h4 class="font-semibold mb-1">Instant Answers</h4>
-                                <p class="text-gray-600">Get immediate responses to common questions about recycling.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <i class="fas fa-chart-line text-eco-green text-xl mt-1 mr-4"></i>
-                            <div>
-                                <h4 class="font-semibold mb-1">Price Comparison</h4>
-                                <p class="text-gray-600">Compare prices across different junkshops in your area.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <i class="fas fa-shield-alt text-eco-green text-xl mt-1 mr-4"></i>
-                            <div>
-                                <h4 class="font-semibold mb-1">Safety Tips</h4>
-                                <p class="text-gray-600">Learn how to conduct safe transactions with verified partners.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-eco-light rounded-2xl p-8">
-                    <div class="bg-white rounded-lg shadow-lg p-6 max-w-md mx-auto">
-                        <div class="flex items-center mb-4">
-                            <div class="w-3 h-3 bg-red-400 rounded-full mr-2"></div>
-                            <div class="w-3 h-3 bg-yellow-400 rounded-full mr-2"></div>
-                            <div class="w-3 h-3 bg-green-400 rounded-full mr-2"></div>
-                            <span class="text-sm text-gray-500 ml-auto">WAIZ Assistant</span>
-                        </div>
-                        <div class="space-y-4">
-                            <div class="bg-gray-100 rounded-lg p-4">
-                                <p class="text-sm">Hi! I'm WAIZ Assistant. How can I help you with recycling today?</p>
-                            </div>
-                            <div class="flex space-x-2">
-                                <button class="bg-eco-green text-white text-sm px-3 py-2 rounded-lg hover:bg-eco-dark transition">
-                                    Find Junkshops
-                                </button>
-                                <button class="border border-eco-green text-eco-green text-sm px-3 py-2 rounded-lg hover:bg-eco-light transition">
-                                    Price Check
-                                </button>
-                                <button class="border border-eco-green text-eco-green text-sm px-3 py-2 rounded-lg hover:bg-eco-light transition">
-                                    Recycling Tips
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+            <!-- Card 3 -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-xl font-semibold mb-2">Eco Warriors</h3>
+                <p class="text-gray-600 mb-4">Aurora Hill, Baguio</p>
+                <div class="flex justify-between items-center">
+                    <span class="text-green-600 font-semibold">2.1 km away</span>
+                    <button class="bg-green-600 text-white px-4 py-2 rounded">Chat</button>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-eco-dark text-white py-12">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="grid md:grid-cols-4 gap-8">
-                <div>
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-recycle text-eco-green text-2xl mr-3"></i>
-                        <span class="font-bold text-xl">WAIZ</span>
-                    </div>
-                    <p class="text-gray-300">
-                        Connecting households with junkshops for a cleaner, greener Baguio City.
-                    </p>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Quick Links</h4>
-                    <ul class="space-y-2 text-gray-300">
-                        <li><a href="#" class="hover:text-eco-green transition">Home</a></li>
-                        <li><a href="#" class="hover:text-eco-green transition">Junkshops</a></li>
-                        <li><a href="#" class="hover:text-eco-green transition">How It Works</a></li>
-                        <li><a href="#" class="hover:text-eco-green transition">About Us</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Support</h4>
-                    <ul class="space-y-2 text-gray-300">
-                        <li><a href="#" class="hover:text-eco-green transition">Help Center</a></li>
-                        <li><a href="#" class="hover:text-eco-green transition">Safety Tips</a></li>
-                        <li><a href="#" class="hover:text-eco-green transition">Contact Us</a></li>
-                        <li><a href="#" class="hover:text-eco-green transition">FAQ</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Connect With Us</h4>
-                    <div class="flex space-x-4">
-                        <a href="#" class="w-10 h-10 bg-eco-green rounded-full flex items-center justify-center hover:bg-green-500 transition">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 bg-eco-green rounded-full flex items-center justify-center hover:bg-green-500 transition">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 bg-eco-green rounded-full flex items-center justify-center hover:bg-green-500 transition">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="border-t border-gray-600 mt-8 pt-8 text-center text-gray-300">
-                <p>&copy; 2025 WAIZ Eco Marketplace. All rights reserved.</p>
-            </div>
-        </div>
+    <footer class="bg-green-800 text-white py-8 text-center">
+        <p>&copy; 2025 WAIZ Eco Marketplace. All rights reserved.</p>
     </footer>
-
-    <!-- Floating Chat Button -->
-    <button class="fixed bottom-6 right-6 w-14 h-14 bg-eco-green rounded-full shadow-lg hover:bg-eco-dark transition flex items-center justify-center text-white">
-        <i class="fas fa-comment text-xl"></i>
-    </button>
 </body>
 </html>
